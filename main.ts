@@ -1,43 +1,33 @@
 let number1 = 4
-let number2 = 5
+while (true) {
+    let buttonispressedA = input.buttonIsPressed(Button.A)
+    let buttonispressedB = input.buttonIsPressed(Button.B)
 
+    if (buttonispressedA) {
+        number1 +=1
+    }
 
-let makejA = function(){
-            number1 += 1
+    if (buttonispressedB) {
+        number1 -=1
+    }
+    (number1)
+   
     whaleysans.showNumber(number1)
 }
-   let makejB= function(){   
-    number1 -= 1
-     whaleysans.showNumber(number1)
-   }
-
-   
-input.onButtonPressed(Button.A, makejA)
-input.onButtonPressed(Button.B, makejB)
-
-input.onButtonPressed(Button.A, function () {
+let makej1 = function(){
+number1-= 1
+basic.pause(10)
+whaleysans.showNumber(number1)
+}
+let makej2 = function () {
     number1 += 1
+    basic.pause(10)
     whaleysans.showNumber(number1)
-input.onButtonPressed(Button.B, function () {
-    number1 -= 1
-    whaleysans.showNumber(number1)
-})
+}
+input.onButtonPressed(Button.A, makej1)
+input.onButtonPressed(Button.B, makej2)
 
 
 
 
-// while (true) {
-//     let buttonispressedA = input.buttonIsPressed(Button.A)
-//     let buttonispressedB = input.buttonIsPressed(Button.B)
 
-
-//     if (buttonispressedA) {
-       
-//         number1 +=1
-//     }
-
-//     if (buttonispressedB){
-
-//         number1 -= 1
-//     }
-//     whaleysans.showNumber(number1)
